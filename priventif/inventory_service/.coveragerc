@@ -1,0 +1,3 @@
+[run]
+source = inventory_service
+omit = inventory_service/test*
