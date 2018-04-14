@@ -1,1 +1,1 @@
-##################################### SOFTENGINE: IS A SOLUTION ARCHITECT ####################################
+SOLUTION ARCHITECT
