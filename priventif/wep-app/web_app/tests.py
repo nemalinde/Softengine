@@ -14,12 +14,12 @@ class ViewTests(unittest.TestCase):
         from .views import my_view
         request = testing.DummyRequest()
         info = my_view(request)
-        self.assertEqual(info['project'], 'inventory_service')
+        self.assertEqual(info['project'], 'web_app')
 
 
 class FunctionalTests(unittest.TestCase):
     def setUp(self):
-        from inventory_service import main
+        from web_app import main
         app = main({})
         from webtest import TestApp
         self.testapp = TestApp(app)

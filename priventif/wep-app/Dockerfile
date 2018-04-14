@@ -4,15 +4,15 @@ RUN apt-get update -y && \
     apt-get install -y python-pip python-dev && \
     pip install --upgrade pip setuptools
 
-WORKDIR /inventory_service
+WORKDIR /web_app
 # We copy this file first to leverage docker cache
-COPY ./requirements.txt /inventory_service/requirements.txt
+COPY ./requirements.txt /web_app/requirements.txt
 
-COPY . /inventory_service
+COPY . /web_app
 
 RUN pip install -r requirements.txt
 
-WORKDIR /inventory_service
+WORKDIR /web_app
 
 RUN python setup.py develop
 

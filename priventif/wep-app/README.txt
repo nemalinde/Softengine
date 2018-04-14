@@ -1,4 +1,4 @@
-inventory_service README
+web_app README
 ==================
 
 Getting Started

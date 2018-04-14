@@ -21,9 +21,9 @@ tests_require = [
     'pytest-cov',
     ]
 
-setup(name='inventory_service',
+setup(name='web_app',
       version='0.0',
-      description='inventory_service',
+      description='web_app',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
           "Programming Language :: Python",
@@ -44,6 +44,6 @@ setup(name='inventory_service',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = inventory_service:main
+      main = web_app:main
       """,
       )
